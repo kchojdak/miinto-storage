@@ -1,0 +1,18 @@
+{
+    "name": "miinto/storage",
+    "description": "Miinto storage component",
+    "license": "proprietary",
+    "require": {
+        "doctrine/orm": "^2.7.0", "symfony/yaml": "^5.0"
+    },
+    "suggest": {
+        "ext-pgsql": "In order to use Pgsql as a data storage.",
+        "ext-redis": "In order to use Redis as a data storage."
+    },
+    "autoload": {
+        "psr-4": {
+            "Miinto\\Storage\\": "src/",
+            "App\\": "app/src"
+        }
+    }
+}
